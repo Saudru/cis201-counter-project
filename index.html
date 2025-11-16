@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">⏱️ Timer</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h1>🎯 Countdown Timer</h1>
+            
+            <!-- Input Section -->
+            <div class="input-section">
+                <label for="daysInput">How many days?</label>
+                <input type="number" id="daysInput" min="1" max="365" value="7">
+                <button id="startBtn">Start Timer</button>
+            </div>
+
+            <!-- Countdown Display (hidden at start) -->
+            <div id="countdownDisplay" class="countdown-section">
+                <h2>⏳ Time Remaining</h2>
+                <div class="countdown-boxes">
+                    <div class="time-box">
+                        <div id="days" class="number">00</div>
+                        <div class="label">Days</div>
+                    </div>
+                    <div class="time-box">
+                        <div id="hours" class="number">00</div>
+                        <div class="label">Hours</div>
+                    </div>
+                    <div class="time-box">
+                        <div id="minutes" class="number">00</div>
+                        <div class="label">Minutes</div>
+                    </div>
+                    <div class="time-box">
+                        <div id="seconds" class="number">00</div>
+                        <div class="label">Seconds</div>
+                    </div>
+                </div>
+                <p class="target-date">Target Date: <strong id="targetDate"></strong></p>
+                <button id="resetBtn" class="reset-btn">Reset</button>
+            </div>
+
+            <!-- Initial Message -->
+            <div id="initialMessage" class="welcome-message">
+                <p>✨ Enter number of days and click "Start Timer" to begin!</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
